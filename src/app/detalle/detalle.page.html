@@ -8,14 +8,14 @@
 </ion-header>
 
 <ion-content fullscreen>
-  <ion-card *ngIf="cancion">
+  <ion-card *ngIf="canciones">
     <img src="https://img.icons8.com/fluent/500/000000/microsoft-groove.png"/>
     <ion-card-header>
-      <ion-card-subtitle>Espectadores: {{cancion.listeners}}</ion-card-subtitle>
-      <ion-card-title>{{cancion.name}}</ion-card-title>
+      <ion-card-subtitle>Espectadores: {{canciones.listeners}}</ion-card-subtitle>
+      <ion-card-title>{{canciones.name}}</ion-card-title>
     </ion-card-header>
     <ion-card-content>
-     Se reprodujo: {{cancion.playcount}} veces
+     Se reprodujo: {{canciones.playcount}} veces
     </ion-card-content>
   </ion-card>
 </ion-content>
